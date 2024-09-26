@@ -63,3 +63,19 @@ export const blogs = [
 		image: '/blogs/04.jpg',
 	},
 ]
+
+
+export const authors = [
+	{
+		name: 'Chris Impey',
+		image: '/author/chris-impey.jpg',
+	},
+	{
+		name: 'Thomas Macaulay',
+		image: '/author/thomas-macaulay.jpg',
+	},
+	{
+		name: 'Emma Hazel',
+		image: '/author/emma-hazel.jpg',
+	},
+]

@@ -11,7 +11,7 @@ const Footer = () => {
     return (
         <footer>
                 <div className="flex-center py-24 flex-col container max-w-2xl mx-auto space-y-12">
-                    <h1 className="text-5xl max-md:text-3xl font-CreteRound text-center">
+                    <h1 className="text-5xl max-md:text-3xl font-creteRound text-center">
                         Get latest posts delivered right to your inbox
                     </h1>
                     <div className="grid max-md:grid-cols-1 grid-cols-3 md:gap-4 w-full px-3">

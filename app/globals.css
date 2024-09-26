@@ -54,7 +54,7 @@
 		@apply border-border;
 	}
 	body {
-		@apply bg-background text-foreground font-WorkSans;
+		@apply bg-background text-foreground font-workSans;
 	}
 }
 .wave {

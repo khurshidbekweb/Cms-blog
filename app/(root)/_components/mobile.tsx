@@ -14,7 +14,7 @@ const Mobile = () => {
         <SheetTrigger asChild className="md:hidden flex cursor-pointer"><Menu /></SheetTrigger>
         <SheetContent side={'left'}>
             <Link href={'/'}>
-                <h1 className="text-4xl font-CreteRound">Khuredu</h1>
+                <h1 className="text-4xl font-creteRound">Khuredu</h1>
             </Link>
             <Separator className="my-3"/>
 

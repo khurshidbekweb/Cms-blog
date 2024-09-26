@@ -52,8 +52,8 @@ const config: Config = {
 				}
 			},
 			fontFamily: {
-				CreteRound: ['var(--font-CreteRound)'],
-				WorkSans: ['var(--font-WorkSans)']
+				creteRound: ['var(--font-CreteRound)'],
+				workSans: ['var(--font-WorkSans)']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

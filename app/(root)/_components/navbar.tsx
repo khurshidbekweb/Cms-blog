@@ -17,7 +17,7 @@ const Navbar = () => {
             <div className="container max-w-6xl mx-auto h-[10vh] w-full flex items-center justify-between">
                 {/* Logo */}
                 <Link href={'/'}>
-					<h1 className='text-4xl font-CreteRound font-bold'>Khuredu</h1>
+					<h1 className='text-4xl font-creteRound font-bold'>Khuredu</h1>
 				</Link>
                 {/* Nav link */}
                 <div className=" hidden md:flex gap-2">

@@ -10,3 +10,8 @@ export interface IBlogs{
     date: string,
     image: string,
 }
+
+export interface IAuthor{
+    name: string,
+    image: string
+}

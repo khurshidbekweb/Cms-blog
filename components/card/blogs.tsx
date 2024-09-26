@@ -4,10 +4,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { Badge } from '../ui/badge';
+import { cn } from '@/lib/utils';
 
-const BlogCards = (blog: IBlogs) => {
+interface Props extends IBlogs{
+    ishorizantal: boolean
+}
+
+const BlogCards = (blog:  Props) => {
     return (
-        <Link href={blog.title} className='grid gap-4 group grid-cols-1 md:grid-cols-2'>
+        <Link href={blog.title} className={cn('grid gap-4 group', blog.ishorizantal ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2')}>
                 <div className="relative bg-secondary rounded-md">
                     <Image 
                         width={650}
