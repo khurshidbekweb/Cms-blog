@@ -6,6 +6,7 @@ import { content } from "@/constants";
 import Link from "next/link";
 
 const SlugPage = () => {
+	
     return (
         <div className="pt-[15vh] max-w-5xl mx-auto px-3 md:px-1">
             <h1 className="lg:text-6xl md:text-5xl text-4xl font-creteRound">

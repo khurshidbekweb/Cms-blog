@@ -1,9 +1,13 @@
+
+
 import BlogCards from '@/components/card/blogs';
 import BgArrow from '@/components/shared/bg-arrow';
-import { blogs } from '@/constants';
-import React from 'react';
+// import { blogs } from '@/constants';
+import { getBlogs } from '@/service/blogs';
 
-const HomePage = () => {
+const HomePage = async () => {   
+    const blogs = await getBlogs()
+    
     return (
         <div className="max-w-6xl mx-auto">
             <div className="relative min-h-[60vh] flex items-center justify-center">
