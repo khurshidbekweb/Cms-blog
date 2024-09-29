@@ -5,6 +5,7 @@ import { popularCategories, popularTags } from "@/constants";
 import { Search } from "lucide-react";
 
 const GlobalSearch = () => {
+
     return (
         <Drawer>
             <DrawerTrigger>

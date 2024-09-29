@@ -9,12 +9,19 @@ export interface IBlogs{
     slug: string,
     content:{html: string},
     author: Author,
-    tags: string[],
     createdAt: string,
     image: {url: string},
     category: Category ,
     tag: Tag,
 }
+
+export interface ITags{
+    title: string,
+    slug:string,
+    blog: IBlogs[]
+}
+
+
 
 interface Author{
     id: string,
@@ -26,7 +33,7 @@ interface Author{
     description: string
 }
 
-interface Category{
+export interface Category{
     title: string,
     slug: string
 }
