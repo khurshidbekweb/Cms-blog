@@ -16,7 +16,7 @@ const BlogCards = (blog:  Props) => {
     
     return (
         <div className={cn('grid gap-4 group', blog.ishorizantal ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2')}>
-                <Link href={`blogs/${blog.slug}`} className="relative bg-secondary rounded-md">
+                <Link href={`/blogs/${blog.slug}`} className="relative bg-secondary rounded-md">
                     <Image 
                         width={650}
                         height={335}
@@ -27,7 +27,7 @@ const BlogCards = (blog:  Props) => {
                 </Link>
                 <div className="flex flex-col space-y-4">
                     {/* Time info */}
-                    <Link href={`blogs/${blog.slug}`} className='space-y-4'>                    
+                    <Link href={`/blogs/${blog.slug}`} className='space-y-4'>                    
                         <div className='flex items-center gap-4'>
                             <div className='flex items-center gap-2'>
                                 <CalendarDays className='w-5 h-5' />
@@ -62,7 +62,7 @@ const BlogCards = (blog:  Props) => {
                         {blog.tag && 
                             <>
                                 <Dot />
-                                <Link href={`tags/${blog.tag.slug}`} className='flex items-center gap-2'>
+                                <Link href={`/tags/${blog.tag.slug}`} className='flex items-center gap-2'>
                                     <Badge variant={'secondary'}>{blog.tag.title}</Badge>
                                 </Link>
                             </>
@@ -70,7 +70,7 @@ const BlogCards = (blog:  Props) => {
                         {blog.category &&
                             <>
                                 <Dot />
-                                <Link href={`category/${blog.category.slug}`} className='flex items-center gap-2'>
+                                <Link href={`/category/${blog.category.slug}`} className='flex items-center gap-2'>
                                     <Badge variant={'secondary'}>{blog.category.title}</Badge>
                                 </Link>
                             </>

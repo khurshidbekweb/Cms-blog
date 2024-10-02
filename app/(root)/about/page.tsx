@@ -1,10 +1,16 @@
 import AuthorCard from '@/components/card/author';
-import { authors } from '@/constants';
+import { getAuthors } from '@/service/author';
 import { Dot, Home } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const AboutPage = () => {
+const AboutPage = async () => {
+
+	const authors = await getAuthors()
+
+	console.log(authors);
+	
+
     return (
         <div className='max-w-6xl mx-auto'>
             <div className="relative min-h-[40vh] flex justify-center items-center flex-col">

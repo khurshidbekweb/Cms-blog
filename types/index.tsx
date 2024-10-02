@@ -23,21 +23,26 @@ export interface ITags{
 
 
 
-interface Author{
+export interface Author{
     id: string,
     name:string,
     slug:string,
     image: {
         url:string
     },
-    description: string
+    description: string;
+    blog: IBlogs[]
 }
 
 export interface Category{
     title: string,
     slug: string
 }
-interface Tag{
+export interface Tag{
+    title: string,
+    slug: string
+}
+export interface ICategoryAndTags{
     title: string,
     slug: string
 }

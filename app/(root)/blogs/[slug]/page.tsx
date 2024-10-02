@@ -84,7 +84,7 @@ const SlugPage = async ({params}: {params: {slug: string}}) => {
 					<h2 className='text-3xl font-creteRound'>{blog.author.name}</h2>
 					<p className='line-clamp-2 text-muted-foreground'>{blog.author.description}</p>
 					<Link
-						href={`author/${blog.author.slug}`}
+						href={`/about/${blog.author.id}`}
 						className='flex items-center gap-2 hover:text-blue-500 underline transition-colors'
 					>
 						<span>See all posts by this author</span>

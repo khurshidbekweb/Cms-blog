@@ -1,8 +1,9 @@
 import { Badge } from "@/components/ui/badge";
-import { Drawer, DrawerContent, DrawerHeader, DrawerTrigger } from "@/components/ui/drawer";
+import { Drawer, DrawerClose, DrawerContent, DrawerHeader, DrawerTrigger } from "@/components/ui/drawer";
 import { Input } from "@/components/ui/input";
 import { popularCategories, popularTags } from "@/constants";
-import { Search } from "lucide-react";
+import { Minus, Search } from "lucide-react";
+import Link from "next/link";
 
 const GlobalSearch = () => {
 
@@ -21,23 +22,39 @@ const GlobalSearch = () => {
 
                         <div className='flex flex-col space-y-2 mt-4'>
                             <p className='font-creteRound text-2xl text-start'>See posts by categories</p>
-                            <div className='flex flex-wrap gap-2'>
-                                {popularCategories.map(item => (
-                                    <Badge key={item.slug} variant={'secondary'}>
-                                        {item.name}
-                                    </Badge>
-                                ))}
+                            <div className="flex items-center gap-x-3">
+                                <div className='flex flex-wrap gap-2'>
+                                    {popularCategories.map(item => (
+                                        <Badge key={item.slug} variant={'secondary'}>
+                                            {item.name}
+                                        </Badge>
+                                    ))}
+                                </div>
+                                <Minus/>
+                                <Link href={'/category'} className="text-blue-500 underline">
+                                        <DrawerClose>
+                                            See all
+                                        </DrawerClose>
+                                </Link>
                             </div>
                         </div>
 
                         <div className='flex flex-col space-y-2 mt-4'>
                             <p className='font-creteRound text-2xl text-start'>See posts by tags</p>
-                            <div className='flex flex-wrap gap-2'>
-                                {popularTags.map(item => (
-                                    <Badge key={item.slug} variant={'secondary'}>
-                                        {item.name}
-                                    </Badge>
-                                ))}
+                            <div className="flex items-center gap-x-3">
+                                <div className='flex flex-wrap gap-2'>
+                                    {popularTags.map(item => (
+                                        <Badge key={item.slug} variant={'secondary'}>
+                                            {item.name}
+                                        </Badge>
+                                    ))}
+                                </div>
+                                <Minus/>
+                                <Link href={'/tags'} className="text-blue-500 underline">
+                                    <DrawerClose>
+                                        See all
+                                    </DrawerClose>
+                                </Link>
                             </div>
                         </div>
 
