@@ -5,7 +5,6 @@ import Link from "next/link";
 
 const TagsPage = async () => {
     const {tags} = await GetAllTags()
-    console.log(tags);
     
     return (
         <div className='max-w-6xl mx-auto'>

@@ -25,7 +25,6 @@ const ContactForm = () => {
             setLoading(true)
             const telegrambotId = process.env.NEXT_PUBLIC_TELEGRAM_BOT!;
             const telegramChatId = process.env.NEXT_PUBLIC_TELEGRAM_CHATID!;
-            console.log(telegramChatId, 'vevrerw');
 
             const promise = fetch(`https://api.telegram.org/bot${telegrambotId}/sendMessage`, 
                 {

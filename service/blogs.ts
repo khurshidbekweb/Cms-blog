@@ -88,3 +88,44 @@ export const getDetailBlogs = async (slug: string) => {
 
   return blog
 };
+
+export const getSearchBlogs = async (title: string) => {
+  const query = gql`
+    query MyQuery($title: String) {
+      blogs(where: {title_contains: $title}) {
+        id
+        title
+        slug
+        description
+        content {
+          html
+        }
+        author {
+            id
+            name
+            slug
+            image {
+              url
+            }
+            description
+        }
+        createdAt
+        image {
+          url
+        }
+        category {
+          title
+          slug
+        }
+        tag {
+          title
+          slug
+        }
+      }
+    }
+  `
+
+  const {blogs} = await request<{blogs: IBlogs[]}>(getBlogsAPi, query, { title})
+
+  return blogs
+}

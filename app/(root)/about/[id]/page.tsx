@@ -4,10 +4,6 @@ import Image from "next/image";
 
 const AuthorPage = async ({params}: {params: {id: string}}) => {
 	const authorBlog = await getAuthorBlogs(params.id)
-	console.log(params.id, 'wrerverv');
-	
-	console.log(authorBlog);
-	
     return (
         <div className="max-w-6xl mx-auto px-3 md:px-1">
 			<div className='flex min-h-[40vh] mt-[20vh] gap-6 items-start max-md:flex-col'>

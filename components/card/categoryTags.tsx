@@ -8,7 +8,6 @@ interface Prosp extends ICategoryAndTags{
 }
 
 const CategoryTags = (props: Prosp) => {
-    console.log(props);
     
     return (
         <Link  href={`/${props.type}/${props.slug}`} className='bg-secondary hover:opacity-80 transition-colors flex justify-center gap-3 items-center p-4 py-8 md:p-6 rounded-md'>

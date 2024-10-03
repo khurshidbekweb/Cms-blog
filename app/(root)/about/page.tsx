@@ -8,9 +8,6 @@ const AboutPage = async () => {
 
 	const authors = await getAuthors()
 
-	console.log(authors);
-	
-
     return (
         <div className='max-w-6xl mx-auto'>
             <div className="relative min-h-[40vh] flex justify-center items-center flex-col">

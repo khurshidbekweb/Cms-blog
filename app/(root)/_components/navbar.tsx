@@ -14,7 +14,6 @@ const Navbar = () => {
     
     // const category = getCategories().then(res => res).then((data => data)).catch(err => err)
 
-    // console.log(category, 'efveaf');
     
     
     return (
