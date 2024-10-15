@@ -10,18 +10,14 @@ import Mobile from "./mobile";
 
 
 const Navbar = () => {
-    const pathname = usePathname() 
-    
-    // const category = getCategories().then(res => res).then((data => data)).catch(err => err)
-
-    
+    const pathname = usePathname()    
     
     return (
         <div className="h-[10vh] backdrop-blur-sm border-b fixed z-40 inset-0 bg-background px-5 md:px-1">
             <div className="container max-w-6xl mx-auto h-[10vh] w-full flex items-center justify-between">
                 {/* Logo */}
                 <Link href={'/'}>
-					<h1 className='text-4xl font-creteRound font-bold'>Khuredu</h1>
+					<h1 className='text-4xl font-creteRound font-bold'>KhurNews</h1>
 				</Link>
                 {/* Nav link */}
                 <div className=" hidden md:flex gap-2">

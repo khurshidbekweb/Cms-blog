@@ -21,7 +21,7 @@ const BlogCards = (blog:  Props) => {
                         height={335}
                         alt={blog.title} 
                         src={blog.image.url} 
-                        className='px-2 md:px-7 rounded-md group-hover:-translate-y-7 -translate-y-6 transition-all object-cover grayscale group-hover:grayscale-0 max-md:-translate-y-2 max-md:group-hover:-translate-y-3'
+                        className='px-2 md:px-7 rounded-md group-hover:-translate-y-7 -translate-y-6 transition-all object-cover l group-hover:grayscale-0 max-md:-translate-y-2 max-md:group-hover:-translate-y-3'
                     />
                 </Link>
                 <div className="flex flex-col space-y-4">
