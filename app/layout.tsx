@@ -24,6 +24,9 @@ export const metadata: Metadata = {
 function RootLayout({ children }: ChildProps) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <title>Blogs</title>
+      </head>
       <body
         className={`${CreteRound.variable} ${WorkSans.variable} overflow-x-hidden `}
       >
